@@ -1,0 +1,61 @@
+body{
+    background: #F9DEF3;
+    text-align: center;
+}
+.titulo{
+    color:#330907;
+    font-family: "Consolas",monospace;
+    font-size: 25px;
+}
+.sub-titulo{
+    color:#330907;
+    font-family: "Consolas",monospace;
+    font-size: 15px;
+}
+.text-concept{
+    color:black;
+    font-family: "Consolas", monospace;;
+}
+.img-portada{
+    height: 250px;
+    width: 400px;
+}
+.img-ayuda{
+    padding: 5px;
+     margin: 10px; 
+     border: 2px solid black; 
+     float: left; 
+     width: 230px;
+}
+.button{
+    background:#7E212F;
+	color:#fff;
+	font-size:1.20em;
+	margin:20px;
+	padding:10px ;
+	text-align:center;
+	width:200px;
+}
+.SubButton{
+    background:#7E212F;
+	color:#fff;
+	font-size:1.0em;
+	margin:20px;
+	padding:5px ;
+	text-align:center;
+	width:180px;
+}
+.TextArea{
+  width: 420px;
+  height: 150px;
+  padding: 12px 20px;
+  border: 2px solid red;
+  border-radius: 10px;
+  font-size: 16px;
+  margin: 10px;
+}
+
+
+  
+ 
+  
