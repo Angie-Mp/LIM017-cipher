@@ -2,44 +2,39 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <title>Cifrado Cesar</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="titulo">
-      <h1>AYUDA YA!!</h1>
-      <img class="img-ayuda" src="../img/ayuda.png" />
-      <h5 class="text-concept">
-        <p>Cada tres meses, el 30% de las mujeres en todo el mundo sufre de maltrato, tanto por sus convivientes o sus novios. 
-        El 42% de las mujeres maltratadas presentan fuertes lesiones a causa de NO realizar una 
-        DENUNCIA a tiempo 
-        Se sabe que uno de los grandes miedos al denunciar es que el agresor se entere y les valla 
-        peor en otra ocasion de maltrato y el miedo de un TERCERO es denunciar y que el agresor 
-        tome represarias.
-        Por ello este es un nuevo metodo para poder realizar una denuncia con toda la confianza de
-        no sufrir REPERCUCIONES en ella.
-        Ingresa la informacion de la DENUNCIA respectiva y le das al boton CRIPTAR y por ello el mensaje llegara en
-        un metodo de CIFRADO.</p> </h5>
-        <h1><p>REALIZAR DENUNCIA</p></h1>
-      </div>
-      <div>
-        <textarea onkeypress="return soloLetras(event)" id="ingreTexto" 
-        onkeyup="mayus(this);" placeholder="Ingresar denuncia" class="TextArea"></textarea>
-        <textarea id="menDescifrado" class="TextArea"></textarea>
-      </div>
-      <h3 class="text-concept">
-      Elija un numero: 
-      </h8>
-        <input type="number" id="desplazamiento" min="1" max="10">
-      <div>  
-        <button class="button" id="btnCifrar">Cifrar</button> 
-        <button type="button" class="button" onclick="enviar()" >Enviar</button> 
-      </div>
-    <script src="../js/encode.js"></script>
-    <script src="../js/index.js"></script>
 
+    <center>
+    <h1>Cifrado César</h1>
+    
+    Ingresa tu mensaje: <br>
+      <textarea id="ingreTexto" cols="50" rows="5" placeholder="Solo texto sin números"></textarea>
+      <br>
+    
+    Desplazamiento: 
+      <input type="number" id="desplazamiento"
+       min="1" max="100">
+
+    <!--Botones-->
+      <button id="btnCifrar">Cifrar</button> o 
+      <button id="btnDescifrar">Descifrar</button>
+
+      <br>
+
+    Mensaje descifrado: <br>
+       <br>
+      <textarea id="menDescifrado" cols="50" rows="5" placeholder="Solo texto sin numeros"></textarea>
+      <br>
+    
+    </center>
+    <!--<script src="cipher.js"></script>-->
+    <script src="index.js" type="module"></script>
   </body>
 </html>
+
 
 
 

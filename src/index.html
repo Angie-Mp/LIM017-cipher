@@ -2,22 +2,141 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Cifrado Cesar</title>
     <link rel="stylesheet" href="./css/style.css" />
-  </head>
+  </head> 
   <body>
-
-    <div class="titulo">
-      <h1>NO AL MALTRATO!!!</h1>
-      <img class="img-portada" src="./img/portada.png" />
-      <h1 >DENUNCIA YA</h1>
+<!------------------------------------------------>
+    <div id ="uno">
+      <div class="titulo">
+        <h1>NO AL MALTRATO!!!</h1>
+        <img class="img-portada" src="./img/portada.png" />
+        <h1 >DENUNCIA YA</h1>
+      </div>
+      <div >
+        <button type="button" class="button" id="btn_denunciar"  >DENUNCIAR</button>
+             <button type="button" class="button" id="btn_verdenuncia"  >DENUNCIAR</button>
+      </div>
     </div>
-    
-    <div >
-      <button type="button" class="button" id="denunciar"  >DENUNCIAR</button>
-      <button class="button" class="button" id="ver_denuncia" >VER DENUNCIA</button>
+<!-----------------vista dos-------------------->
+    <div id = "dos">
+      <h1>AYUDA YA!!</h1>
+      <img class="img-ayuda" src="./img/ayuda.png" />
+      <h5 class="text-concept">
+        <p>Cada tres meses, el 30% de las mujeres en todo el mundo sufre de maltrato, tanto por sus convivientes o sus novios. 
+        El 42% de las mujeres maltratadas presentan fuertes lesiones a causa de NO realizar una 
+        DENUNCIA a tiempo 
+        Se sabe que uno de los grandes miedos al denunciar es que el agresor se entere y les valla 
+        peor en otra ocasion de maltrato y el miedo de un TERCERO es denunciar y que el agresor 
+        tome represarias.
+        Por ello este es un nuevo metodo para poder realizar una denuncia con toda la confianza de
+        no sufrir REPERCUCIONES en ella.
+        Ingresa la informacion de la DENUNCIA respectiva y le das al boton CRIPTAR y por ello el mensaje llegara en
+        un metodo de CIFRADO.</p> </h5>
+        <h1><p>REALIZAR DENUNCIA</p></h1>
+        <div>
+          <textarea onkeypress="return soloLetras(event)" id="ingreTexto" 
+          onkeyup="mayus(this);" placeholder="Ingresar denuncia" class="TextArea"></textarea>
+          <textarea id="menDescifrado" class="TextArea"></textarea>
+        </div>
+        <h3 class="text-concept">
+          Elija un numero: 
+          </h8>
+            <input type="number" id="desplazamiento" min="1" max="10">
+          <div>  
+            <button class="button" id="btnCifrar">Cifrar</button> 
+            <button type="button" class="button" id="enviar" >Enviar</button> 
+        </div>
     </div>
+<!---------------------------------------->
+    <div id = "tres">
+      <div class="titulo">
+        <h1>VER DENUNCIA</h1>
+        <textarea onkeypress="return soloLetras(event)" id="ingreTexto2" 
+        class="TextArea"></textarea>
+        <h5 class="text-concept">
+        Valor elegido:
+        </h8>
+        <input type="number" id="desplazamiento2" min="1" max="10">
+        <br>
+        <button class="SubButton" id="verMensaje">Ver Mensaje</button> 
+        <button class="SubButton" id="btnDescifrar">Descifrar</button> 
+         <br>
+        <textarea id="menDescifrado2" class="TextArea" ></textarea>
+        <br>
 
-    <script src="./js/index.js" ></script>
-  </body>
+      <button id ="btn_volver">volver al menu</button>
+
+    </div>
+  <!---------------------------
+  <div id ="VistaMenu" >
+   
+      <div class="titulo">
+        <h1>NO AL MALTRATO!!!</h1>
+        <img class="img-portada" src="./img/portada.png" />
+        <h1 >DENUNCIA YA</h1>
+      </div>
+      
+      <div >
+        <button type="button" class="button" id="Denunciar"  >DENUNCIAR</button>
+        <button class="button" class="button" id="VerDenuncia" >VER DENUNCIA</button>
+      </div>
+</div>
+
+<div id="VistaDenunciar" >
+  <h1>AYUDA YA!!</h1>
+  <img class="img-ayuda" src="./img/ayuda.png" />
+  <h5 class="text-concept">
+    <p>Cada tres meses, el 30% de las mujeres en todo el mundo sufre de maltrato, tanto por sus convivientes o sus novios. 
+    El 42% de las mujeres maltratadas presentan fuertes lesiones a causa de NO realizar una 
+    DENUNCIA a tiempo 
+    Se sabe que uno de los grandes miedos al denunciar es que el agresor se entere y les valla 
+    peor en otra ocasion de maltrato y el miedo de un TERCERO es denunciar y que el agresor 
+    tome represarias.
+    Por ello este es un nuevo metodo para poder realizar una denuncia con toda la confianza de
+    no sufrir REPERCUCIONES en ella.
+    Ingresa la informacion de la DENUNCIA respectiva y le das al boton CRIPTAR y por ello el mensaje llegara en
+    un metodo de CIFRADO.</p> </h5>
+    <h1><p>REALIZAR DENUNCIA</p></h1>
+  </div>
+  <div>
+    <textarea onkeypress="return soloLetras(event)" id="ingreTexto" 
+    onkeyup="mayus(this);" placeholder="Ingresar denuncia" class="TextArea"></textarea>
+    <textarea id="menDescifrado" class="TextArea"></textarea>
+  </div>
+  <h3 class="text-concept">
+  Elija un numero: 
+  </h8>
+    <input type="number" id="desplazamiento" min="1" max="10">
+  <div>  
+    <button class="button" id="btnCifrar">Cifrar</button> 
+    <button type="button" class="button" id="enviar" >Enviar</button> 
+</div>
+<div id="VistaVerDenuncia">
+  <div class="titulo">
+    <h1>VER DENUNCIA</h1>
+    <textarea onkeypress="return soloLetras(event)" id="ingreTexto" 
+    class="TextArea"></textarea>
+    <h5 class="text-concept">
+    Valor elegido:
+    </h8>
+    <input type="number" id="desplazamiento" min="1" max="10">
+    <br>
+    <button class="SubButton" id="verMensaje">Ver Mensaje</button> 
+    <button class="SubButton" id="btnDescifrar">Descifrar</button> 
+     <br>
+    <textarea id="menDescifrado" class="TextArea" ></textarea>
+    <br>
+    <button class="SubButton" onclick="volver_menu()">Volver al Menu</button> 
+    </div>
+</div>
+----------------------->
+</body>
+<script src="extras.js"></script>
+<script src="index.js" type ="module"></script>
 </html>
+
+
+
+   
+
