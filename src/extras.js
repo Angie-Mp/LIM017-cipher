@@ -1,3 +1,10 @@
+const btn_denunciar= document.getElementById("btn_denunciar");
+const btn_verdenuncia= document.getElementById("btn_verdenuncia");
+const btn_volver = document.getElementById("btn_volver");
+//const soloLetras = document.getElementById("soloLetras");
+const enviar = document.getElementById("enviar");
+const verMensaje = document.getElementById("verMensaje");
+
 btn_denunciar.addEventListener("click",()=>{
     document.getElementById("uno").style.display="none";
     document.getElementById("dos").style.display="block";
@@ -11,24 +18,13 @@ btn_volver.addEventListener("click",()=>{
     document.getElementById("uno").style.display="block";
 })
 
-
-function soloLetras(event) {
-    key = event.keyCode || event.which;
-    tecla = String.fromCharCode(key).toLowerCase();
-    letras = " áéíóúabcdefghijklmnñopqrstuvwxyz";
-    tecla_numero = false
-
-    if(letras.indexOf(tecla) == -1 && !tecla_numero)
-        return false;
-}
 enviar.addEventListener("click",()=>{
-    var data = document.getElementById("menDescifrado").value;
+    let data = document.getElementById("menDescifrado").value;
     localStorage.setItem("almacenar", data.toLowerCase());
     alert("Información almacenada");
-    // location.href = ("index2.html");
      console.log("enviar")
-     ///
-     var data= document.getElementById("desplazamiento").value;
+     //
+      data= document.getElementById("desplazamiento").value;
      localStorage.setItem("almacenar2",data);
      location.href = ("index.html");
 })
@@ -38,4 +34,18 @@ verMensaje.addEventListener("click",()=>{
     document.getElementById("desplazamiento2").value=localStorage.getItem("almacenar2");
 })
 
+/* eslint-disable no-unused-vars */
+const soloLetras=(event)=> {
+   let key = event.keyCode || event.which;
+   let tecla = String.fromCharCode(key).toLowerCase();
+   let letras = " áéíóúabcdefghijklmnñopqrstuvwxyz";
+   let tecla_numero = false
+
+    if(letras.indexOf(tecla) == -1 && !tecla_numero)
+        return false;
+}
+function mayus(event) {
+    event.value = event.value.toUpperCase();
+  }
+/* eslint-enable no-unused-vars */
 
