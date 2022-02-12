@@ -21,7 +21,7 @@ btn_volver.addEventListener("click",()=>{
 enviar.addEventListener("click",()=>{
     let data = document.getElementById("menDescifrado").value;
     localStorage.setItem("almacenar", data.toLowerCase());
-    alert("Información almacenada");
+    alert("Denuncia Enviada");
      console.log("enviar")
      //
       data= document.getElementById("desplazamiento").value;
