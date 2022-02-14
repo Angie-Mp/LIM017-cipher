@@ -461,3 +461,43 @@ Esta sección está para ayudarte a llevar un control de lo que vas completando.
 * [ ] Cifra/descifra minúsculas
 * [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
 * [ ] Permite usar un `offset` negativo.
+
+# Document: CIPHER
+### Introduccion al proyecto:
+##### 1. DESCARGAR 
+- En el repositorio podemos observar que tenemos un boton verde llamado CODE, al dar click podemos observar que hay un boton llamado Download ZIP le damos click y se va descargar. Vamos a nuestra carpeta de descarga y la descomprimimos.
+
+##### 2. INSTALAR
+- Entramos a nuestro editor de codigo, abrimos nuestra carpeta en el cual esta el proyecto. En el terminal colocamos:
+**nvm use**  (La version que usemos del node tiene que ser mayor o igual a 14)
+**npm install**  (Instalamos las dependencias)
+
+##### 3. EJECUTAR
+- En el terminal colocamos:
+**npm start** (Ejecuta el proyecto)
+Con ello podemos observar que nos va a mostrar dos puertos el que se usara es **"Local: localhost:3000"**, en caso este puerto este ocupado nos mostrara un **localhost:5050** u otro.
+
+### FUNCIONALIDAD
+- Al ingresar al aplicativo vamos a observar dos botones, uno dice **DENUNCIAR** y el otro** VER DENUNCIA,** le damos a denunciar.
+- Veremos una pequeña introduccion del tema seguido de un campo en el cual ingresaremos la **DENUNCIA** y elegiremos un valor para **CIFRAR** nuestra denuncia.
+- Le damos al boton **CIFRAR** y veremos en el segundo campo el texto **CIFRADO**.
+- Le damos al boton **ENVIAR** y nos redirecciona al menu.
+- Vamos al boton **VER DENUNCIA** y vemos que en la nueva vista hay un boton que dice **VER DENUNCIA** y al dar click veremos en el primer campo la denuncia ingresada pero ella se encuentra **CIFRADA**.
+- Le damos al boton **DESCIFRAR**y en el segundo recuadro sale el mensaje desifrado.
+
+### DISEÑO Y PROTOTIPADO
+- Lo primero que se realizo fue plasmar el diseño en hoja.
+- Despùes de plasmar la idea en hoja, usamos **FIGMA** para aterrizar mejor la idea.
+- En este punto se tuvo que tomar en cuenta lo siguiente:
+. Que sea facil de entender para el **USUARIO**
+. Que sea **PRACTICO** y **ATRACTIVO** visualmente
+- Se realizo el **FIGMA** con la funcionalidad que me gustaria que tuviera.
+
+### USUARIO
+- Los principales usuarios son las **MUJERES** victimas de **MALTRATO** y personas en general que sepan que alguien padese de ello.
+- Los usuarios podran realizar su denuncia de forma anonima .
+- Con este producto trata que el usuario se sienta seguro de realizar su denuncia.
+
+##### RELACION ENTRE PRODUCTO Y USUARIO
+- Con este aplicativo se busca ayudar a las mujeres que sufren cualquier tipo de violencia y asi puedan denunciar.
+- El denunciante se sienta seguro de no sufrir repercuciones.
