@@ -1,21 +1,44 @@
 body{
-    background: #F9DEF3;
+    background: url(../img/fondo.jpg) center top;
+   background-repeat: no-repeat;
+   background-size: 1400px 900px;
     text-align: center;
+
+}
+.fondo{
+    background: url(../img/fondo2.jpg) center top;
+   background-repeat: no-repeat;
+   background-size: 1400px 700px;
+    text-align: center;
+
 }
 .titulo{
-    color:#330907;
+    color:white;
+    font-family: "Consolas",monospace;
+    font-size: 30px;
+    -webkit-text-stroke:2px black;
+}
+.tituloPrincipal{
+    color:white;
     font-family: "Consolas",monospace;
     font-size: 25px;
+     position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-text-stroke:2px black;
 }
+
 .sub-titulo{
     color:#330907;
     font-family: "Consolas",monospace;
     font-size: 15px;
 }
 .text-concept{
-    max-width: 90%;
     color:black;
     font-family: "Consolas", monospace;;
+    position: absolute;
+    left: 26%;
+    right: 2%;
 }
 .text-subTitule{
     color:black;
@@ -32,24 +55,19 @@ body{
      float: left; 
      width: 230px;
 }
-.button{
-    background:#7E212F;
-	color:#fff;
-	font-size:1.20em;
-	margin:20px;
-	padding:10px ;
-	text-align:center;
-	width:200px;
-}
-.SubButton{
-    background:#7E212F;
-	color:#fff;
-	font-size:0.8em;
-	margin:20px;
-	padding:10px ;
-	text-align:center;
-	width:180px;
-}
+
+.button[type="button"]{
+    border-color: black;
+    height: 40px;
+    width: 180px;
+    background: #fffba5;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+  .button[type="button"]:hover {
+    cursor: pointer;
+    background: #FFCC80 ;
+  }
 .TextArea{
   width: 420px;
   height: 150px;
