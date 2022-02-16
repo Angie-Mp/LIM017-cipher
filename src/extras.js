@@ -20,7 +20,7 @@ btn_volver.addEventListener("click",()=>{
 
 enviar.addEventListener("click",()=>{
     let data = document.getElementById("menDescifrado").value;
-    localStorage.setItem("almacenar", data.toLowerCase());
+    localStorage.setItem("almacenar", data);  //.toLowerCase()
     alert("Denuncia Enviada");
      console.log("enviar")
      //
@@ -38,7 +38,7 @@ verMensaje.addEventListener("click",()=>{
 const soloLetras=(event)=> {
    let key = event.keyCode || event.which;
    let tecla = String.fromCharCode(key).toLowerCase();
-   let letras = " áéíóúabcdefghijklmnñopqrstuvwxyz";
+   let letras = " áéíóúabcdefghijklmnopqrstuvwxyz";
    let tecla_numero = false
 
     if(letras.indexOf(tecla) == -1 && !tecla_numero)
