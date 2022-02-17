@@ -487,12 +487,13 @@ Con ello podemos observar que nos va a mostrar dos puertos el que se usara es **
 
 ### DISEÑO Y PROTOTIPADO
 - Lo primero que se realizo fue plasmar el diseño en hoja.
+![This is a alt text.](img_readme/proceso.png )
 - Despùes de plasmar la idea en hoja, usamos **FIGMA** para aterrizar mejor la idea.
 - En este punto se tuvo que tomar en cuenta lo siguiente:
 . Que sea facil de entender para el **USUARIO**
 . Que sea **PRACTICO** y **ATRACTIVO** visualmente
 - Se realizo el **FIGMA** con la funcionalidad que me gustaria que tuviera.
-
+![This is a alt text.](img_readme/prototipado.jpg )
 ### USUARIO
 - Los principales usuarios son las **MUJERES** victimas de **MALTRATO** y personas en general que sepan que alguien padese de ello.
 - Los usuarios podran realizar su denuncia de forma anonima .
