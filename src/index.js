@@ -8,7 +8,7 @@ const btnCifrado = document.getElementById("btnCifrar");
 const btnDescifrado = document.getElementById("btnDescifrar");
 const mensajeDescifrado = document.getElementById("menDescifrado"); 
 
-const mensajeDescifrado2 = document.getElementById("menDescifrado2"); 
+const mensajeDescifradoDos = document.getElementById("menDescifradoDos"); 
 const valorDesplazamiento2 = document.getElementById("desplazamiento2");
 const ingresarTexto2 = document.getElementById("ingreTexto2");
 //button cifrado
@@ -23,7 +23,7 @@ const ingresarTexto2 = document.getElementById("ingreTexto2");
     const btnDescifrar = () => {
          console.log('valor descifrado');
          console.log(cipher.decode(valorDesplazamiento2.value,ingresarTexto2.value));
-         mensajeDescifrado2.value = cipher.decode(valorDesplazamiento2.value,ingresarTexto2.value);
+         mensajeDescifradoDos.value = cipher.decode(valorDesplazamiento2.value,ingresarTexto2.value);
     } 
     btnDescifrado.addEventListener("click", btnDescifrar); 
     console.log(cipher);

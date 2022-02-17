@@ -1,18 +1,18 @@
 const cipher = {
 
  encode:function (offset,string) {
-  let mensajeDescifrado = "";
+  let mensajeDescifradoDos = "";
   const valorIngresado = parseInt(offset); 
    for (let i = 0; i < string.length ; i++){
      if (string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90){
        let formula = (string.charCodeAt(i) - 65 + valorIngresado) % 26 + 65;
-       mensajeDescifrado += String.fromCharCode(formula);
+       mensajeDescifradoDos += String.fromCharCode(formula);
      }
      if(string.charCodeAt(i) === 32){
-      mensajeDescifrado += " ";
+     mensajeDescifradoDos += " ";
      }
    }
-   return mensajeDescifrado;
+   return mensajeDescifradoDos;
    /* let mensajeDescifrado = "";
     const valorIngresado = parseInt(offset);
        for (let i=0; i<string.length; i++){
@@ -24,16 +24,15 @@ const cipher = {
       ////////
   decode:function (offset,string) {
     let mensajeDescifrado = "";
-    const valorIngresado = parseInt(offset); 
+    const valorIngresadoDos = parseInt(offset); 
      for (let i = 0; i < string.length ; i++){
        if (string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90){
-         let formula = (string.charCodeAt(i) + 65 - valorIngresado) % 26 + 65;
+         let formula = (string.charCodeAt(i) + 65 - valorIngresadoDos) % 26 + 65;
          mensajeDescifrado += String.fromCharCode(formula);
        }
      if(string.charCodeAt(i) === 32){
          mensajeDescifrado += " ";
        }
-  
      }
      return mensajeDescifrado;
 
