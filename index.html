@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cifrado Cesar</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head> 
+  <body>
+<!-----------------vista uno-------------------->
+<div id ="uno">
+      <div class="tituloPrincipal">
+        <h1>SI TE MALTRATA,</h1>
+        <h1 >ESO NO ES AMOR</h1>
+        <button type="button" class="button" id="btn_denunciar"  >DENUNCIAR</button>
+        <button type="button" class="button" id="btn_verdenuncia"  >VER DENUNCIA</button>
+        <h2>DENUNCIA YA !!!</h2>
+      </div>
+    </div>
+<!-----------------vista dos-------------------->
+    <div id = "dos">
+    <div class="text-concept">
+      <h1 class="titulo">AYUDA YA!!</h1>
+       <h3 >
+        <p>Cada tres meses, el 30% de las mujeres en todo el mundo sufre de maltrato, tanto por sus convivientes o sus novios. 
+        El 42% de las mujeres maltratadas presentan fuertes lesiones a causa de NO realizar una 
+        DENUNCIA a tiempo 
+        Se sabe que uno de los grandes miedos al denunciar es que el agresor se entere y les valla 
+        peor en otra ocasion de maltrato y el miedo de un TERCERO es denunciar y que el agresor 
+        tome represarias.
+        Por ello este es un nuevo metodo para poder realizar una denuncia con toda la confianza de
+        no sufrir REPERCUCIONES en ella.
+        Ingresa la informacion de la DENUNCIA respectiva y le das al boton Cifrar y por ello el mensaje llegara en
+        un metodo de Encriptado.</p> 
+      </h3>
+       <br>
+       <h1 class="titulo">REALIZAR DENUNCIA</h1>
+        <div>
+          <textarea onkeypress="return soloLetras(event)" id="ingreTexto" 
+          onkeyup="mayus(this);" placeholder="Ingresar denuncia" class="TextArea"></textarea>
+          <textarea id="menDescifrado" class="TextArea"></textarea>
+        </div>
+        <h7 class="text-subTitule">
+          Elija un numero: 
+        </h7>
+            <input type="number" id="desplazamiento" min="1" max="10">
+        <div>  
+            <br>
+            <button class="button" type="button" id="btnCifrar">Cifrar</button> 
+            <button type="button" class="button" id="enviar" >Enviar</button> 
+        </div>
+    </div>
+  </div>
+<!-----------------vista tres-------------------->
+    <div id = "tres">
+      <div class="text-concept">
+        <h1 class="titulo">VER DENUNCIA</h1>
+        <textarea onkeypress="return soloLetras(event)" id="ingreTexto2" 
+        class="TextArea"></textarea>
+        <h5 class="text-subTitule">
+        Valor elegido:
+        <input type="number" id="desplazamiento2" min="1" max="10"> </h5>
+        <button class="button" type="button" id="verMensaje">Ver Denuncia</button> 
+        <button class="button" type="button" id="btnDescifrar">Descifrar</button> 
+         <br>
+        <textarea id="menDescifradoDos" class="TextArea" ></textarea>
+        <br>
+        <button id ="btn_volver" type="button" class="button">Volver al menu</button>
+    </div>
+    </div>
+</body>
+<script src="extras.js"></script>
+<script src="index.js" type ="module"></script>
+</html>
+
+
+
+   
+
