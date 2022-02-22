@@ -1,6 +1,5 @@
 import cipher from './cipher.js';
-cipher.encode;
-cipher.decode;
+
 // declarar variables
 const valorDesplazamiento = document.getElementById("desplazamiento");
 const ingresarTexto = document.getElementById("ingreTexto");
